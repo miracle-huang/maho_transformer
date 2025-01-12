@@ -43,8 +43,6 @@ def cross_validation_split_by_channel(data_dict, fold_num = 1, shuffle = False):
                     x_test_list.append(test_segments[segment][0])
                     y_test_list.append(test_segments[segment][1])
 
-                continue
-
     x_train = np.stack(x_train_list, axis=0)
     x_test = np.stack(x_test_list, axis=0)
     y_train = np.array(y_train_list)
